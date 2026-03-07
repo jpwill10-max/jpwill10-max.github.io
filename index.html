@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Justin Williams | CSCI 492 Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0d1117;
+    color:#e6edf3;
+}
+
+.header{
+    background:#161b22;
+    border-bottom:1px solid #30363d;
+    text-align:center;
+    padding:25px 0;
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
+}
+
+.header h2{
+    margin:5px 0 0 0;
+    font-weight:normal;
+    color:#8b949e;
+}
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.navbar a{
+    text-decoration:none;
+    background:#21262d;
+    color:#e6edf3;
+    padding:12px 24px;
+    border-radius:8px;
+    border:1px solid #30363d;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.navbar a:hover{
+    background:#30363d;
+}
+
+.content{
+    text-align:center;
+    padding:60px 20px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to My CS180 Portfolio!</h1>
-    <a href="./1/index.html">Project 1</a>
+
+<div class="header">
+    <h1>Justin Williams</h1>
+    <h2>CSCI 492</h2>
+</div>
+
+<div class="navbar">
+    <a href="project2.pdf" target="_blank">Project 2</a>
+</div>
+
+<div class="content">
+    <p>Select a project above to view the report.</p>
+</div>
+
 </body>
 </html>
