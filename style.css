@@ -11,7 +11,7 @@ header h1 {
 .projects-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 
 a {
@@ -19,4 +19,6 @@ a {
     background-color: lightgray;
     padding: 20px;
     margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
 }
