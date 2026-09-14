@@ -8,6 +8,15 @@ header h1 {
     padding: 10px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -20,5 +29,10 @@ a {
     padding: 20px;
     margin-bottom: 10px;
     width: 300px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
     text-align: center;
 }
