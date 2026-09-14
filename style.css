@@ -4,4 +4,6 @@ header {
 
 header h1 {
     background-color: midnightblue;
+    color: white;
+    padding: 10px;
 }
