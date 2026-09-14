@@ -39,8 +39,8 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* The misalignment was bothering me*/
+    /* Fixed alighnment and visibility */
     margin-bottom: 10px;
     margin-right: 5px;
-    color: red;
+    color: white;
 }
