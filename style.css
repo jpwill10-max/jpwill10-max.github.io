@@ -10,6 +10,7 @@ header h1 {
 
 .projects-container {
     display: flex;
+    flex-direction: column;
     align-content: center;
 }
 
