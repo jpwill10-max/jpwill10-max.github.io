@@ -1,0 +1,46 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    background-color: rgb(24,40,69);
+    color: white;
+    /*margin-left: 30px; worked well
+    margin-right: 30px;
+    margin-left: 30em; kicked two items off screen
+    margin-right: 30em;
+    padding-left: 30px; this no longer seperated the items but extended them
+    padding-right: 30px; 
+    padding-left: 30em; kicked two items off screen
+    padding-right: 30em; */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer {
+    text-align: right;
+}
+
+.image-container {
+    position: relative;
+    width: 400px;
+}
+
+.image-container img {
+    width: 400px;
+    height: 400px;
+}
+
+.image-container span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* The misalignment and visibilty was bothering me*/
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color: white;
+}
