@@ -8,6 +8,11 @@ header h1 {
     padding: 10px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}s
+
 body {
     display: flex;
     flex-direction: column;
