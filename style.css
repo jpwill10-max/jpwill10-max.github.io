@@ -11,9 +11,10 @@ header h1 {
 html, body {
     height: 100%;
     margin: 0;
-}s
+}
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
