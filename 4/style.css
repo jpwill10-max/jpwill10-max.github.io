@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e8;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #26384a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin: 30px 0;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome img {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 15px;
+}
+
+.button {
+    background-color: #26384a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #3d566d;
+}
+
+.about {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 25px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.login-note {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #26384a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.era {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.era-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.era img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.era-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 15px;
+}
+
+.era-content h2 {
+    margin: 0 0 10px 0;
+}
+
+.era-content p {
+    margin: 0 0 15px 0;
+}
+
+.era-content .button {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .welcome {
+        padding: 20px 80px;
+    }
+
+}

@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="author" content="Justin Williams">
+    <meta name="description" content="Explore historical eras and civilizations from different periods of history.">
+    <meta name="keywords" content="history, civilizations, historical eras, Ancient Egypt, Rome">
+
+    <title>Historical Civilization Guide</title>
+
+    <link rel="icon" href="img/scroll_fav.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>test</p>
+
+    <header>
+        <h1>Historical Civilization Guide</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="extra.html">Extra</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="welcome">
+
+            <h2>Explore History</h2>
+
+            <p>
+                Learn about important civilizations and historical
+                eras from around the world.
+            </p>
+
+            <img src="images/history-banner.jpg"
+                 alt="Ancient historical ruins">
+
+            <p>
+                <button class="button" id="exploreButton">
+                    Explore History
+                </button>
+            </p>
+
+        </section>
+
+
+        <section class="about">
+
+            <h2>What Is This App?</h2>
+
+            <p>
+                The Historical Civilization Guide is designed to help
+                users learn about different civilizations throughout history.
+            </p>
+
+            <p>
+                Instead of searching through many different websites,
+                users can choose a historical era and explore civilizations
+                that existed during that time.
+            </p>
+
+            <p>
+                Each civilization will provide information about its
+                time period, location, government, culture, religion,
+                achievements, and other important parts of its history.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <div id="loginPopup" class="popup">
+
+        <div class="popup-content">
+
+            <button class="close-button" id="closeButton">
+                &times;
+            </button>
+
+            <h2>Login</h2>
+
+            <p>
+                Please log in before exploring the website.
+            </p>
+
+            <form>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <button type="button">Log In</button>
+
+            </form>
+
+            <p class="login-note">
+                Login functionality will be added later.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>&copy; 2026 Historical Civilization Guide</p>
+        <p>Created by Justin Williams</p>
+
+    </footer>
+
+
+    <script>
+
+        const exploreButton = document.getElementById("exploreButton");
+        const loginPopup = document.getElementById("loginPopup");
+        const closeButton = document.getElementById("closeButton");
+
+        exploreButton.addEventListener("click", function() {
+            loginPopup.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function() {
+            loginPopup.style.display = "none";
+        });
+
+    </script>
+
 </body>
+
 </html>
